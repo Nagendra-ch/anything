@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_instance" "firstdemo" {
   key_name                    = "nag-NVirginia"
-  ami                         = "ami-098f16afa9edf40be"
+  ami                         = "ami-011b3ccf1bd6db744"
   instance_type               = "t2.micro"
   vpc_security_group_ids = 	 ["sg-00319e8b7cfa57448"]
   #vpc_id = aws_vpc.default.id
