@@ -15,8 +15,8 @@ data "aws_partition" "default" {
 data "aws_subnet" "default" {
   id = var.subnet
   filter {
-      name = "Name"
-      values = ["my-sub-pub1"]
+      name = "owner"
+      values = ["nagendrra"]
   }
 }
 output "region" {
