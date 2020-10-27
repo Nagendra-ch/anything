@@ -7,7 +7,7 @@ resource "aws_instance" "firstdemo" {
   key_name                    = "nag-NVirginia"
   ami                         = "ami-098f16afa9edf40be"
   instance_type               = "t2.micro"
-  #vpc_security_group_ids = 	 [aws_security_group.SSH-RDS-Connection.id]
+  vpc_security_group_ids = 	 [aws_security_group.ssh-rdp.id]
   #vpc_id = aws_vpc.default.id
   subnet_id                   = var.subnet
   associate_public_ip_address = true
